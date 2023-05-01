@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Button } from "./components/Button";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="font-bold text-center text-white my-10 text-4xl"> Componente de Botão</h1>
+      <div className="w-full flex flex-col gap-10 justify-center items-center">
+        <Button variant="submit" size="default" >Entrar</Button>
+        <Button variant="proceed" size="small" >Avançar</Button>
+        <Button variant="cancel" size="small" >Cancelar</Button>
+        <Button icon={"0000"}>Entrar</Button>
+      </div>
     </div>
   );
 }
